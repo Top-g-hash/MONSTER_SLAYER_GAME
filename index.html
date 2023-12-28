@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Slayer Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon"  href="favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+  
+
+    <header>
+      
+      <h1 data-value="MONSTER SLAYER">MONSTER SLAYER</h1>
+    </header>
+    <div id="game">
+      <section id="monster" class="container">
+        <h2 data-value="MONSTER HEALTH">MONSTER HEALTH</h2>
+        <div class="healthbar">
+          <div class="healthbar__value" :style="monsterHealthBar"></div>
+        </div>
+      </section>
+      <section id="player" class="container">
+        <h2 data-value="YOUR HEALTH">YOUR HEALTH</h2>
+        <div class="healthbar">
+          <div class="healthbar__value" :style="playerHealthBar"></div>
+        </div>
+      </section>
+      <section class="container" v-if="winner">
+        <h2>Game Over!!!</h2>
+        <h3 v-if="winner==='monster'">You Lost!</h3>
+        <h3 v-else-if="winner ==='player'">You Won!</h3>
+        <h3 v-else>Its`s a Draw!</h3>
+        <button @click="startOver">Start New Game</button>
+      </section>
+      <section id="controls" v-else>
+        <button @click="playerAttack">ATTACK</button>
+        <button @click="specialAttack" :disabled="specialAtkDis">
+          SPECIAL ATTACK
+        </button>
+        <button @click="healPlayer">HEAL</button>
+        <button @click="surrenderPlayer">SURRENDER</button>
+      </section>
+      <section id="log" class="container">
+        <h2>Battle Log</h2>
+        <ul>
+          <li v-for="logmessage in logMessage">
+            <span :class="{'log--player':logmessage.actionBy === 'player','log--monster':logmessage.actionBy === 'monster'}">{{logmessage.actionBy === 'player'? "Player":"Monster"}} </span>
+            <span v-if="logmessage.actionType === 'heal'">
+              healed for <span class="log--heal"> {{logmessage.actionValue}}</span>
+            </span>
+            <span v-else> does attack of <span class="log--damage">{{logmessage.actionValue}}</span></span>
+          </li>
+        </ul>
+      </section>
+    </div>
+   <button class="sound" onclick="playAudio()">Play Background Music</button>
+
+<audio id="bgm" src="./Y2meta.app - Kerosene but the best part is looped (128 kbps) (1).mp3" loop></audio>
+  </body>
+</html>
