@@ -30,5 +30,5 @@ The fate of the realm rests on your shoulders. Will you emerge as the victorious
 
 ![Screenshot_2023-12-28-14-49-48_14265](https://github.com/Top-g-hash/MONSTER_SLAYER_GAME/assets/115820379/b324a9ac-93dc-4c3c-bdec-36f1555b2500)
 ![Screenshot_2023-12-28-14-50-40_30413](https://github.com/Top-g-hash/MONSTER_SLAYER_GAME/assets/115820379/60ec44b5-0cfb-4d5e-9de4-cd820194c737)
-![Screenshot_2023-12-28-14-50-43_28260](https://github.com/Top-g-hash/MONSTER_SLAYER_GAME/assets/115820379/9b57f8d2-65de-42f8-a25a-321b867bac5d)
+
 ![Screenshot_2023-12-28-14-50-46_25815](https://github.com/Top-g-hash/MONSTER_SLAYER_GAME/assets/115820379/6b110d1b-4807-4c88-900f-944b01447ec3)
