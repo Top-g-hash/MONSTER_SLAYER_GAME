@@ -31,7 +31,6 @@ The fate of the realm rests on your shoulders. Will you emerge as the victorious
 - Built using VUE.js, JavaScript, HTML, and CSS.
 
 ## Game Snapshots
-*[Include relevant snapshots or images of the game to showcase its visuals and gameplay]*
 
 ![Screenshot 1](https://github.com/Top-g-hash/MONSTER_SLAYER_GAME/assets/115820379/bf025066-e7d4-4407-b241-ea96a4a5c5f5)
 
